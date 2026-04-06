@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #f8fafc);
+    color: #1e293b;
+}
+
+/* DARK MODE */
+body.dark-mode {
+    background: #1e293b;
+    color: #f1f5f9;
+}
+
+body.dark-mode .card {
+    background: rgba(30,41,59,0.8);
+    color: #f1f5f9;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .navbar {
+    background: rgba(30,41,59,0.8);
+}
+
+body.dark-mode .navbar a {
+    color: #f1f5f9;
+}
+
+body.dark-mode .navbar a:hover {
+    color: #3b82f6;
+}
+
+body.dark-mode .skill-bar {
+    background: #334155;
+}
+
+.navbar {
+    position: fixed;
+    width: 80%;
+    top: 0;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.6);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.navbar a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1000px;
+     margin: 120px auto 50px auto;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 25px;
+}
+
+.card {
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 110px;
+    border-radius: 50%;
+}
+
+.profile h2 {
+    margin: 10px 0 5px;
+}
+
+.section-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #64748b;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.item h3 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.item span {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    height: 6px;
+    background: #021631;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.contact p {
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+@media(max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+.navbar a:hover {
+    color: blue;
+    transition: 0.3s;
+}
+
+.card.highlight {
+    border: 2px solid #3b82f6; 
+    box-shadow: 0 8px 40px rgba(59,130,246,0.5);
+     background: rgba(255,255,255,0.85);
+    transition: 0.3s;
+    }
+
+    .container > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container > div:first-child .card {
+    flex: 1; 
+}
+
+#viewMoreBtn {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #4384ec;
+    color: rgb(11, 9, 9);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#viewMoreBtn:hover {
+    background-color: #b9cffe;
+}
